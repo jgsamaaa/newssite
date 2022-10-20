@@ -6,12 +6,12 @@
 
 body {
   font-family: sans-serif;
-  paddinng: 0 2em;
+  padding: 0 2em;
 }
 
 .title {
   text-align: center;
-  amrgin: 2em 0;
+  margin: 2em 0;
   font-size: 4em;
 }
 
@@ -118,4 +118,19 @@ body {
 .article p {
   line-height: 25px;
   color: #555;
+}
+
+@media screen and (max-width: 1330px) {
+  html {
+    font-size: 14px;
+  }
+  .news-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
 }
