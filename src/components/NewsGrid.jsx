@@ -1,11 +1,12 @@
 import React from 'react';
 import NewsItem from './NewsItem';
 
-const NewsGrid = () => {
+const NewsGrid = ({items}) => {
   return (
-    <div>
-      <h1>NewsGrid</h1>
-      <NewsItem />
+    <div className="news-grid">
+        {items.map((item, i ) => (
+          <NewsItem key={i} item={item} />
+        ))}
     </div>
   );
 };
