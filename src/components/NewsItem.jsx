@@ -7,7 +7,12 @@ function NewsItem({ item }) {
   const formatTime = formatDate.replace('Z', '');
 
   return (
-    <a href={item.url} className="article">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href={item.url}
+      className="article"
+    >
       <div className="article-image">
         <img src={item.urlToImage} alt={item.title} />
       </div>
